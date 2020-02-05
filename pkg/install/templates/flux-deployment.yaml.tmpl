@@ -221,6 +221,7 @@ spec:
         # Serve /metrics endpoint at different port;
         # make sure to set prometheus' annotation to scrape the port value.
         - --listen-metrics=:3031
+
         # Disable scanning of registries (and the image database)
 {{- if .RegistryDisableScanning }}
         - --registry-disable-scanning
